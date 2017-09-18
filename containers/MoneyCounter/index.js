@@ -8,7 +8,7 @@ import { styles } from './styles';
 class MoneyCounter extends React.Component {
     constructor(props) {
         super(props);
-        setInterval(this.increaseMoney.bind(this), 2000);
+        setInterval(this.increaseMoney.bind(this), 1000);
     }
 
     increaseMoney() {

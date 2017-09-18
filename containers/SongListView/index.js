@@ -26,12 +26,14 @@ class SongListView extends React.Component {
                         value={this.props.currentSong}
                         onChangeText={this.props.changeCurrentSong}
                     />
-                    <Button
-                        title="Add song"
-                        style={styles.addButton}
-                        accessibilityLabel="Add new song in the list"
-                        onPress={this.addNewSong.bind(this)}
-                    />
+                    <View style={styles.addButton}>
+                      <Button
+                          title="Add song"
+                          accessibilityLabel="Add new song in the list"
+                          disabled={this.props.currentSong.length === 0}
+                          onPress={this.addNewSong.bind(this)}
+                      />
+                    </View>
                 </View>
                 <ListView
                     style={styles.listView}

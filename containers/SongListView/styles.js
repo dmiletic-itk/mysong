@@ -7,15 +7,12 @@ export const styles = StyleSheet.create({
     },
     textInput: {
         height: 40,
-        borderColor: 'gray',
-        borderWidth: 1,
         width: 100
     },
     listView: {
-        backgroundColor: '#fff',
         height: 240
     },
     addButton: {
-        color: '#841584'
+        height: 40
     }
 });
